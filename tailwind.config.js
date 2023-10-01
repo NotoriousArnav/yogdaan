@@ -4,6 +4,7 @@ module.exports = {
     './static/**/*.{js,ts,jsx,html}',
     './templates/**/*.{js,ts,jsx,html}',
     './templates/*.{js,ts,jsx,html}',
+    './templates/dnf.html',
     './templates/***/**/*.{js,ts,jsx,html}'
   ],
   theme: {

@@ -26,11 +26,14 @@
       <a href="/about/" class="mr-5 hover:text-gray-900">About</a>
       <a href="/contact/" class="mr-5 hover:text-gray-900">Contact</a>
       <a href="/supporters/" class="mr-5 hover:text-gray-900">Supporters</a>
+      {% if user.is_authenticated %}
+      <a href="{% url 'account_logout' %}" class="mr-5 hover:text-gray-900">Log out</a>
+      {% endif %}
     </nav>
     <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">
       {% if user.is_authenticated %}
       <a href="">
-       Profile
+        Hello, {{ user.first_name }}
       </a>
       {% else %}
       <a href="{% url 'account_login' %}">

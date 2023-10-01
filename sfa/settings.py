@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     "ckeditor",
     # Django Apps
     'lander',
+    'donations_and_fundraisers',
 ]
 
 MIDDLEWARE = [
